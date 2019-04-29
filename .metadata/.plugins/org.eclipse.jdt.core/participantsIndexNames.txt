@@ -1,0 +1,9 @@
+INDEX VERSION 1.131
+C:\WebStudy\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1557356848.index
+\WebApp01\src
+C:\WebStudy\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\19341432.index
+\report01\src
+C:\WebStudy\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3978084071.index
+\report03\src
+C:\WebStudy\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1991897736.index
+\report02\src

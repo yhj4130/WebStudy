@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>입사지원서</title>
+<style type="text/css">
+.char{background-color:gray;}
+.char_2{background-color:lightgray;}
+.center{text-align:center;}
+.left{text-align:left;}
+.right{text-align:right;}
+</style>
+</head>
+<body>
+	<!-- 입사지원서 title 영역 -->
+	<table border="1" width=100% height=50px>
+		<tr>
+			<th class="center char_2">
+				입사지원서
+			</th>
+		</tr>
+	</table>
+	<br>
+	
+	<!-- 입사구분 영역 -->
+	<table border="1" width=100% height=35px>
+		<tr>
+			<th class="char" width=15%>입사구분</th>
+			<td class="center" width=15%->신입/경력</td>
+			<th class="char" width=15%>응시부문</th>
+			<td width=15%></td>
+			<th class="char"  width=15%>희망급여</th>
+			<td class="right" width=15%>만원</td>
+		</tr>
+	</table>
+	<br>
+	
+	<!-- 인적사항  영역 -->
+	<table border="1" width=100% height=35px>
+		<tr>	
+			<th class="char center" rowspan="6" width=30px>인적사항</th>
+			<th class="char_2 center" rowspan="2">성명</th>
+			<td colspan="2">　(한글)</td>
+			<td class="center" rowspan="6" width=120px height=160px> 사진 <br><br> (3cmＸ4cm)</td>
+			
+		</tr>
+		<tr>
+			<td>　(漢字)</td>
+			<td>　(영문)</td>
+		</tr>
+		<tr>
+			<th class="char_2 center">주민등록번호</th>
+			<td class="right" colspan="2">-　　　　　　　　　　　	(만　　　	세) </td>
+		</tr>
+		<tr>
+			<th class="char_2 center">현주소</th>
+			<td colspan="2"></td>
+		</tr>
+		<tr>
+			<th class="char_2 center" rowspan="2" width=100px>연락처</th>
+			<td>　(전화)</td>
+			<td>　(휴대폰)</td>
+		</tr>
+		<tr>
+			<td colspan="2">　(E-mail)</td>
+		</tr>
+	</table>
+	<br>
+	
+	<!-- 학력사항  영역 -->
+	<table border="1" width=100%>
+		<tr>
+			<th class="char center" rowspan="5" width=30px>학적사항</th>
+			<th class="char_2">졸업년월</th>
+			<th class="char_2">학교명</th>
+			<th class="char_2">전공</th>
+			<th class="char_2">소재지</th>
+			<th class="char_2">성적</th>
+		</tr>
+		<tr>
+			<td class="right">년　　　월　</td>
+			<td class="right">고등학교(졸업,예정)　</td>
+			<td></td>
+			<td></td>
+			<td class="center">-</td>
+		</tr>
+		<tr>
+			<td class="right">년　　　월　</td>
+			<td class="right">대학(졸업,예정)　</td>
+			<td></td>
+			<td></td>
+			<td class="center">/4.5</td>
+		</tr>
+		<tr>
+			<td class="right">년　　　월　</td>
+			<td class="right">대학교(졸업,예정)　</td>
+			<td></td>
+			<td></td>
+			<td class="center">/4.5</td>
+		</tr>
+		<tr>
+			<td class="right">년　　　월　</td>
+			<td class="right">대학원　</td>
+			<td></td>
+			<td></td>
+			<td class="center">/4.5</td>
+		</tr>
+	</table>
+	<br>
+	
+	<!-- 병역사항, 신체사항  영역 -->
+	<table border="1" width=100%>
+		<tr>
+			<th class="char center" rowspan="3" width=30px>병역사항</th>
+			<th class="char_2" colspan="2">복무기간</th>
+			<td class="center" colspan="4">~</td>
+			<th class="char center" rowspan="3" width=30px>신체사항</th>
+			<th class="char_2">혈액형</th>
+			<td class="right">　　형　</td>
+			<th class="char_2">특기</th>
+			<td class="right"></td>
+		</tr>
+		<tr>
+			<th class="char_2">군별</th>
+			<td>　　　</td>
+			<th class="char_2">병과</th>
+			<td>　　　</td>
+			<th class="char_2">계급</th>
+			<td>　　　</td>
+			<th class="char_2">신장</th>
+			<td class="right">　　cm　</td>
+			<th class="char_2">취미</th>
+			<td>　　　</td>
+		</tr>
+		<tr>
+			<th class="char_2">미필사유</th>
+			<td colspan="5">　　　</td>
+			<th class="char_2">체중</th>
+			<td class="right">　　kg　</td>
+			<th class="char_2">보훈대상</th>
+			<td class="right">대상,비대상　</td>
+		</tr>
+	</table>
+	<br>
+		
+	<!-- 자격사항, 외국어사항  영역 -->
+	<table border="1" width=100%>
+		<tr>
+			<th class="char center" rowspan="5" width=30px>자격사항</th>
+			<th class="char_2">종류</th>
+			<th class="char_2">발행처</th>
+			<th class="char_2">취득일</th>
+			<th class="char center" rowspan="5" width=30px>외국어사항</th>
+			<th class="char_2">언어</th>
+			<th class="char_2">시험명</th>
+			<th class="char_2">점수</th>
+		</tr>
+			<td>　</td>
+			<td>　</td>
+			<td>　</td>
+			<td>　</td>
+			<td>　</td>
+			<td>　</td>
+		<tr>
+			<td>　</td>
+			<td>　</td>
+			<td>　</td>
+			<td>　</td>
+			<td>　</td>
+			<td>　</td>
+		</tr>
+		<tr>
+			<td>　</td>
+			<td>　</td>
+			<td>　</td>
+			<td>　</td>
+			<td>　</td>
+			<td>　</td>
+		</tr>
+		<tr>
+			<td>　</td>
+			<td>　</td>
+			<td>　</td>
+			<td>　</td>
+			<td>　</td>
+			<td>　</td>
+		</tr>
+	</table>
+	<br>
+		
+	<!-- 가족사항  영역 -->
+	<table border="1" width=100%>
+		<tr>
+			<th class="char center" rowspan="5" width=30px>가족사항</th>
+			<th class="char_2">관계</th>
+			<th class="char_2">성명</th>
+			<th class="char_2">생년월일</th>
+			<th class="char_2">학력</th>
+			<th class="char_2">직위</th>
+			<th class="char_2">근무처</th>
+			<th class="char_2">동거여부</th>
+		</tr>
+			<td>　</td>
+			<td>　</td>
+			<td>　</td>
+			<td>　</td>
+			<td>　</td>
+			<td>　</td>
+			<td class="center">동거/별거</td>
+		<tr>
+			<td>　</td>
+			<td>　</td>
+			<td>　</td>
+			<td>　</td>
+			<td>　</td>
+			<td>　</td>
+			<td class="center">동거/별거</td>
+		</tr>
+		<tr>
+			<td>　</td>
+			<td>　</td>
+			<td>　</td>
+			<td>　</td>
+			<td>　</td>
+			<td>　</td>
+			<td class="center">동거/별거</td>
+		</tr>
+		<tr>
+			<td>　</td>
+			<td>　</td>
+			<td>　</td>
+			<td>　</td>
+			<td>　</td>
+			<td>　</td>
+			<td class="center">동거/별거</td>
+		</tr>
+	</table>
+
+</body>
+</html>
