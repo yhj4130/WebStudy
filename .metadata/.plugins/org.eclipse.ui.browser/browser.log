@@ -2,3 +2,10 @@
 4월 29, 2019 12:36:21.19 NEW SESSION
 4월 29, 2019 12:36:21.19 [12052:11616:0429/123621.194:ERROR:browser_process_sub_thread.cc(217)] Waited 236 ms for network service
 4월 29, 2019 12:36:28.08 [6116:4856:0429/123628.082:ERROR:browser_process_sub_thread.cc(217)] Waited 73 ms for network service
+
+4월 30, 2019 09:40:05.21 NEW SESSION
+4월 30, 2019 09:40:05.21 [13660:7308:0430/094005.196:ERROR:browser_process_sub_thread.cc(217)] Waited 199 ms for network service
+4월 30, 2019 10:00:18.95 [884:11420:0430/100018.952:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+4월 30, 2019 10:00:22.77 [884:13932:0430/100022.770:ERROR:platform_sensor_reader_win.cc(244)] NOT IMPLEMENTED
+4월 30, 2019 11:21:14.75 [884:13932:0430/112114.751:ERROR:platform_sensor_reader_win.cc(244)] NOT IMPLEMENTED
+4월 30, 2019 11:59:09.72 [884:8512:0430/115909.727:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
