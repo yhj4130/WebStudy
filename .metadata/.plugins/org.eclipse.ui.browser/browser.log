@@ -9,3 +9,18 @@
 4월 30, 2019 10:00:22.77 [884:13932:0430/100022.770:ERROR:platform_sensor_reader_win.cc(244)] NOT IMPLEMENTED
 4월 30, 2019 11:21:14.75 [884:13932:0430/112114.751:ERROR:platform_sensor_reader_win.cc(244)] NOT IMPLEMENTED
 4월 30, 2019 11:59:09.72 [884:8512:0430/115909.727:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+
+5월 02, 2019 09:06:25.98 NEW SESSION
+5월 02, 2019 09:06:25.98 [5432:5292:0502/090625.984:ERROR:browser_process_sub_thread.cc(217)] Waited 416 ms for network service
+5월 02, 2019 09:08:13.26 [14656:5396:0502/090813.269:ERROR:shader_disk_cache.cc(258)] Failed to create shader cache entry: -2
+5월 02, 2019 09:08:13.27 [14656:5396:0502/090813.269:ERROR:shader_disk_cache.cc(258)] Failed to create shader cache entry: -2
+5월 02, 2019 09:09:00.22 [14656:9028:0502/090900.227:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+5월 02, 2019 09:09:09.53 [14656:5396:0502/090909.536:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 02, 2019 09:42:10.61 [14656:8756:0502/094210.618:ERROR:textfield.cc(1773)] NOT IMPLEMENTED
+5월 02, 2019 10:50:24.74 [14656:9028:0502/105024.745:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+5월 02, 2019 11:00:25.72 [14656:9028:0502/110025.725:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+
+5월 02, 2019 14:28:42.57 NEW SESSION
+5월 02, 2019 14:28:42.57 [1900:11472:0502/142842.559:ERROR:browser_process_sub_thread.cc(217)] Waited 31 ms for network service
+5월 02, 2019 14:30:21.28 [5844:5480:0502/143021.282:ERROR:browser_process_sub_thread.cc(217)] Waited 293 ms for network service
+5월 02, 2019 14:31:30.52 [15436:15088:0502/143130.523:ERROR:browser_process_sub_thread.cc(217)] Waited 99 ms for network service

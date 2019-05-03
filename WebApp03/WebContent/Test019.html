@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test019.html</title>
+
+<style type="text/css">
+
+	* {color: #223322;}
+	input {font-family: 나눔고딕코딩; font-weight: bold;}
+	input:focus {background-color: #eeeedd;}
+	input.btn:hover {color: orange;}
+	td {text-align: left;}
+	.txt {text-align: center;}
+
+</style>
+
+<script type="text/javascript">
+
+	function myCalc()
+	{
+	
+		document.getElementById("textarea").value = "";
+		
+		var vNum = document.getElementById("num").value;
+		var num = parseInt(vNum);
+		
+		var sum = 0;
+		
+		var txt = "";
+		
+		if (num<100)
+			alert("100 이상의 숫자를 입력해주세요.");
+		else
+			for(var i=10;i<num;i += 10)
+			{
+				sum =  i*(i+1)/2;
+				
+				txt = "1 ~ "+ i + " : " + sum + "\n";
+				
+				document.getElementById("textarea").value += txt;
+			}	
+		
+		sum = num*(num+1)/2;
+		txt = "1 ~ "+ num + " : " + sum + "\n";
+		document.getElementById("textarea").value += txt;
+		
+	
+		 /* 
+		document.getElementById("textarea").value = "";
+		var nNum = Number(document.getElementById("num").value);
+		var nSum = 0;
+		
+		if(nNum < 100)
+		{
+			alert("입력값은 100 이상만 가능합니다.");
+			return;
+		}
+		
+		for (var n=1; n<=nNum; n++)
+		{
+			nSum += n;
+			if (n%10==0)
+				document.getElementById("textarea").value += "1 ~ " + n + " : " + nSum + "\n";
+		}
+		
+		document.getElementById("textarea").value += "1 ~ " + nNum + " : " + nSum + "\n";  */
+	}
+
+</script>
+
+</head>
+<body>
+<!-- 
+	1 부터 n 까지의 합을 계산하되 n 은 100 이상만 허용하고
+	출력 시 10의 배수가 될 때 마다 중간 합을 출력할 수 있는
+	페이지를 구성한다.
+	반복문을 활용할 수 있도록 한다.
+	HTML, CSS, Javascript 활용
+	
+	페이지 레이아웃
+	------------------------------------------------------
+	정수 입력(100 이상) [          ]
+	
+		<결과> <취소>
+	------------------------
+	| 1 ~ 10 : 55		   |
+	| 1 ~ 20 : 210		   |
+	|	  :				   |	
+	| 1 ~ 100 : 5050	   |
+	------------------------
+	------------------------------------------------------
+ -->
+ 
+ <div>
+ 	<h1>자바스크립트 활용</h1>
+ 	<hr>
+ </div>
+ 
+ <div>
+	<form>
+		<table>
+			<tr>
+ 				<th>정수 입력(100 이상)</th>
+ 				<td><input type="text" id="num" class="txt" style="width: 100px;"></td>
+ 			</tr>
+		</table>
+ 		
+ 		<br>
+ 		<input type="button" value="결과" class="btn" onclick="myCalc()">
+ 		<input type="reset" value="취소" class="btn">
+ 		
+ 		<br><br>
+ 		<textarea id="textarea" style="width: 250px; height: 150px;" readonly="readonly"></textarea>	
+	</form>
+ </div>
+ 
+</body>
+</html>
