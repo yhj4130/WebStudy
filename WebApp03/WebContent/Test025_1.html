@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test025.html</title>
+
+<style type="text/css">
+	* {font-family: 맑은 고딕; font-weight: bold;}
+	td {text-align: right;}
+</style>
+
+<script type="text/javascript">
+	
+	var months = new Array();
+	//var weekName = new Array();
+	
+	function calendar()
+	{
+		//alert("함수 호출 확인");
+		var year = document.getElementById("txtYear").value;
+		var month = document.getElementById("txtMonth").value;
+		
+		var tableNode = document.getElementById ("calendarTbl");
+		
+		if (Number(month)<1 || Number(month)>12)
+			alert("1월 ~ 12월을 입력해주세요");
+		
+	 	months = [31, 0, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+	 	//weekName = ['일', '월', '화', '수', '목', '금', '토'];
+	 	
+	 	var nalsu = 0;
+	 	
+	 	if (Number(year)%4==0 && Number(year)%100!=0 || Number(year)%400==0)
+		{
+			months[1] = 29;
+		}
+	 	else
+	 	{
+	 		months[1] = 28;
+	 	}
+	 	
+	 	nalsu = (Number(year)-1)*365 + (Number(year)-1)/4 - (Number(year)-1)/100 + (Number(year)-1)/400;
+	 	
+	 	for (var i=0; i<(Number(month)-1); i++)
+	 		nalsu += months[i];
+	 	
+	 	nalsu += 1;
+	 	
+	 	var getNalsu = Math.floor(nalsu);
+	 	
+	 	var day = Math.floor(getNalsu%7);
+	 	
+	 	var trNode = document.createElement("tr");
+	 	
+	 	//alert(getNalsu);
+	 	
+	 	
+	 	for (var i=0; i<day; i++)
+	 		trNode.appendChild(createTdNode(" "));
+	 	
+ 		for (var i=1; i<=months[Number(month)-1]; i++)
+ 		{
+ 			trNode.appendChild(createTdNode(i));
+ 			day++;
+ 		} 
+ 		
+ 		tableNode.appendChild(trNode);
+ 		
+ 		/* for (var i = 0; i < 5; i++)
+        {
+           var trNode = document.createElement("tr");
+           
+           for (var j = 0; j < 7; j++)
+           {
+              trNode.appendChild(createTdNode(day));
+              day++
+           }
+           
+           tableNode.appendChild(trNode);
+
+        } */
+ 		
+	}
+	
+	function createTdNode(val)
+	{
+		var textNode = document.createTextNode(val);
+		var tdNode = document.createElement("td");
+		tdNode.appendChild(textNode);
+		return tdNode;
+	}
+	
+</script>
+
+</head>
+<body>
+
+<div>
+	<h1>테이블 동적 생성으로 만년달력 그리기</h1>
+	<hr>
+</div>
+
+<div>
+	<form>
+		<input type="text" id="txtYear" class="txt" style="width: 67px;"> 년
+		<input type="text" id="txtMonth" class="txt" style="width: 67px;"> 월
+		<br><br>
+		<button type="button" class="btn" style="width: 200px;" onclick="calendar()">만년달력 그리기</button>
+		<br><br>
+		
+		<table border="1" id="calendarTbl">
+			<tr>
+				<th>일</th>
+				<th>월</th>
+				<th>화</th>
+				<th>수</th>
+				<th>목</th>
+				<th>금</th>
+				<th>토</th>
+			</tr>
+		</table>
+	</form>
+</div>
+
+</body>
+</html>
