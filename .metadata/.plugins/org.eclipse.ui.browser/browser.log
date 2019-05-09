@@ -24,3 +24,8 @@
 5월 02, 2019 14:28:42.57 [1900:11472:0502/142842.559:ERROR:browser_process_sub_thread.cc(217)] Waited 31 ms for network service
 5월 02, 2019 14:30:21.28 [5844:5480:0502/143021.282:ERROR:browser_process_sub_thread.cc(217)] Waited 293 ms for network service
 5월 02, 2019 14:31:30.52 [15436:15088:0502/143130.523:ERROR:browser_process_sub_thread.cc(217)] Waited 99 ms for network service
+
+5월 09, 2019 17:34:32.60 NEW SESSION
+5월 09, 2019 17:34:32.60 [15952:15004:0509/173432.599:ERROR:CONSOLE(1)] "Refused to execute inline event handler because it violates the following Content Security Policy directive: "script-src 'strict-dynamic' 'sha256-EVjR8L4xuo0c7UNzAtLmKQoojKIjdHqYIqdanwmukFQ=' 'sha256-ps+f+kvXv/saiMZBvZdqrnWV6Gcxo4dQ9UAG6SXPM6M=' 'sha256-YUYyUdaHPr4vPwR1MbbgywsO6nfhVmXMpy6ILGW3rKk=' 'sha256-eQ/8katArHjxBXlG/3E2C7amnQhgFpZPX2SWmD1ArTA=' 'sha256-KNY16OU2yK5dZbn5VtmVD+8Nko2v7x2ZPfUGq+DvZEs=' 'sha256-lj3Ybq0OcgGBTQmk7PbTtC0eH6NJaDsZHXnY9olO7Mk=' 'sha256-vF9fmk8eMrPKQYr8cqW3iQndNoE+Lmfww8i3eMaKGyo='". Either the 'unsafe-inline' keyword, a hash ('sha256-...'), or a nonce ('nonce-...') is required to enable inline execution.
+5월 09, 2019 17:34:32.62 ", source: chrome-search://local-ntp/local-ntp.html (1)
+5월 09, 2019 17:45:44.31 [15952:15368:0509/174544.315:ERROR:browser_process_sub_thread.cc(217)] Waited 258 ms for network service
