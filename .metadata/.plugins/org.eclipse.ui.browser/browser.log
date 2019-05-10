@@ -29,3 +29,19 @@
 5월 09, 2019 17:34:32.60 [15952:15004:0509/173432.599:ERROR:CONSOLE(1)] "Refused to execute inline event handler because it violates the following Content Security Policy directive: "script-src 'strict-dynamic' 'sha256-EVjR8L4xuo0c7UNzAtLmKQoojKIjdHqYIqdanwmukFQ=' 'sha256-ps+f+kvXv/saiMZBvZdqrnWV6Gcxo4dQ9UAG6SXPM6M=' 'sha256-YUYyUdaHPr4vPwR1MbbgywsO6nfhVmXMpy6ILGW3rKk=' 'sha256-eQ/8katArHjxBXlG/3E2C7amnQhgFpZPX2SWmD1ArTA=' 'sha256-KNY16OU2yK5dZbn5VtmVD+8Nko2v7x2ZPfUGq+DvZEs=' 'sha256-lj3Ybq0OcgGBTQmk7PbTtC0eH6NJaDsZHXnY9olO7Mk=' 'sha256-vF9fmk8eMrPKQYr8cqW3iQndNoE+Lmfww8i3eMaKGyo='". Either the 'unsafe-inline' keyword, a hash ('sha256-...'), or a nonce ('nonce-...') is required to enable inline execution.
 5월 09, 2019 17:34:32.62 ", source: chrome-search://local-ntp/local-ntp.html (1)
 5월 09, 2019 17:45:44.31 [15952:15368:0509/174544.315:ERROR:browser_process_sub_thread.cc(217)] Waited 258 ms for network service
+
+5월 10, 2019 09:47:43.01 NEW SESSION
+5월 10, 2019 09:47:43.01 [15780:14656:0510/094743.016:ERROR:browser_process_sub_thread.cc(217)] Waited 191 ms for network service
+5월 10, 2019 11:53:17.83 [7076:6848:0510/115317.834:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+5월 10, 2019 11:53:17.91 [7076:6848:0510/115317.912:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+5월 10, 2019 11:53:18.20 [7076:6848:0510/115318.200:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+5월 10, 2019 12:37:15.94 [7076:6848:0510/123715.939:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+5월 10, 2019 12:39:47.69 [7076:6848:0510/123947.695:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+5월 10, 2019 13:17:44.84 [7076:11216:0510/131744.845:ERROR:platform_sensor_reader_win.cc(244)] NOT IMPLEMENTED
+5월 10, 2019 14:16:32.29 [7076:10900:0510/141632.290:ERROR:browser_process_sub_thread.cc(217)] Waited 175 ms for network service
+5월 10, 2019 15:03:01.44 [8940:9384:0510/150301.440:ERROR:browser_process_sub_thread.cc(217)] Waited 195 ms for network service
+5월 10, 2019 15:09:47.82 [2088:6228:0510/150947.826:ERROR:browser_process_sub_thread.cc(217)] Waited 128 ms for network service
+5월 10, 2019 15:27:47.34 [6936:12044:0510/152747.325:ERROR:browser_process_sub_thread.cc(217)] Waited 136 ms for network service
+5월 10, 2019 15:31:22.68 [1904:10524:0510/153122.682:ERROR:browser_process_sub_thread.cc(217)] Waited 191 ms for network service
+5월 10, 2019 16:24:52.04 [10424:10420:0510/162452.048:ERROR:browser_process_sub_thread.cc(217)] Waited 101 ms for network service
+5월 10, 2019 16:38:48.35 [1840:16252:0510/163848.351:ERROR:browser_process_sub_thread.cc(217)] Waited 153 ms for network service

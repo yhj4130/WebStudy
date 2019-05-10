@@ -3,10 +3,26 @@
 <%
 	request.setCharacterEncoding("UTF-8");
 
-	String name = request.getParameter("name");
-	String gender = request.getParameter("gender");
-	String major = request.getParameter("major");
-	String hobby = request.getParameter("hobby");
+	String name = request.getParameter("name");				//-- 텍스트박스 단일값 수신
+	String gender = request.getParameter("gender");			//-- 라디오버튼 단일값 수신
+	String major = request.getParameter("major");			//-- 선택상자 단일값 수신
+	String[] hobby = request.getParameterValues("hobby");	
+	//-- 다중 선택이 가능한 선택상자 일 경우 배열 형태로 수신
+	
+	String genderStr = "";
+	if(gender.equals("M"))
+		genderStr = "남자";
+	else if(gender.equals("W"))
+		genderStr = "여자";
+	else
+		genderStr = "확인불가";
+	
+	String hobbyStr = "";
+	if (hobby != null)
+	{
+		for (String item : hobby)
+			hobbyStr += " [" + item + "]";
+	}
 %>
 
 <!DOCTYPE html>
@@ -31,10 +47,11 @@
 	
 	<div>
 		<h3>수신한 데이터</h3>
+		
 		<p>이름 : <%=name %></p>
-		<p>성별 : <%=gender %></p>
+		<p>성별 : <%=gender %>(<%=genderStr %>)</p>
 		<p>전공 : <%=major %></p>
-		<p>취미 : <%=hobby %></p>
+		<p>취미 : <%=hobbyStr %></p>
 	</div>
 </div>
 
