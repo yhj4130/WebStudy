@@ -160,7 +160,7 @@
 			<tr>
 				<th>국어점수</th>
 				<td>
-					<input type="text" id="kor" name="kor"">
+					<input type="text" id="kor" name="kor">
 					<span class="errMsg" id="korMsg">0 ~ 100 사이의 점수를 입력하세요.</span>
 				</td>
 			</tr>

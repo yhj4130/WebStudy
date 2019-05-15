@@ -53,3 +53,69 @@
 5월 14, 2019 16:58:08.31 [15304:10964:0514/165808.317:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
 5월 14, 2019 17:04:39.48 [15304:10964:0514/170439.481:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
 5월 14, 2019 17:04:54.43 [15304:10964:0514/170454.436:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+5월 14, 2019 17:49:08.83 [15304:2816:0514/174908.835:ERROR:browser_process_sub_thread.cc(217)] Waited 195 ms for network service
+
+5월 15, 2019 10:38:36.48 NEW SESSION
+5월 15, 2019 10:38:36.48 [7260:8704:0515/103836.482:ERROR:browser_process_sub_thread.cc(217)] Waited 59 ms for network service
+5월 15, 2019 10:40:26.19 [876:11924:0515/104026.194:ERROR:browser_process_sub_thread.cc(217)] Waited 280 ms for network service
+5월 15, 2019 10:41:08.63 [1388:7832:0515/104108.634:ERROR:browser_process_sub_thread.cc(217)] Waited 136 ms for network service
+5월 15, 2019 11:07:30.87 [15928:14016:0515/110730.876:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+5월 15, 2019 11:24:09.14 [15928:13256:0515/112409.149:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 11:24:09.21 [15928:13256:0515/112409.212:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 11:24:09.21 [15928:13256:0515/112409.212:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 11:24:09.22 [15928:13256:0515/112409.213:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 11:24:09.22 [15928:13256:0515/112409.215:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 11:24:09.22 [15928:13256:0515/112409.217:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 11:24:09.22 [15928:13256:0515/112409.219:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 11:24:09.23 [15928:13256:0515/112409.221:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 11:24:09.23 [15928:13256:0515/112409.224:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 11:24:09.23 [15928:13256:0515/112409.225:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 11:24:09.24 [15928:13256:0515/112409.227:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 11:24:09.24 [15928:13256:0515/112409.229:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 11:24:09.24 [15928:13256:0515/112409.229:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 11:24:09.25 [15928:13256:0515/112409.233:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 11:24:09.25 [15928:13256:0515/112409.236:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 11:24:09.25 [15928:13256:0515/112409.236:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 11:24:09.26 [15928:13256:0515/112409.239:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 11:24:09.26 [15928:13256:0515/112409.241:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 11:24:09.26 [15928:13256:0515/112409.242:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 11:24:09.26 [15928:13256:0515/112409.244:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 11:29:10.85 [15928:14016:0515/112910.852:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+5월 15, 2019 11:49:13.82 [15928:14016:0515/114913.821:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+5월 15, 2019 11:57:16.11 [15928:14016:0515/115716.113:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+5월 15, 2019 11:57:16.17 [15928:14016:0515/115716.172:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+5월 15, 2019 11:57:16.57 [15928:14016:0515/115716.571:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+5월 15, 2019 11:57:55.84 [15928:14016:0515/115755.843:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+5월 15, 2019 11:57:55.85 [15928:14016:0515/115755.859:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+5월 15, 2019 11:57:56.12 [15928:14016:0515/115756.126:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+5월 15, 2019 12:49:09.15 [15928:13256:0515/124909.153:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 13:19:09.28 [15928:13256:0515/131909.280:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 13:19:09.33 [15928:13256:0515/131909.334:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 13:19:09.33 [15928:13256:0515/131909.334:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 13:19:09.34 [15928:13256:0515/131909.334:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 13:19:09.34 [15928:13256:0515/131909.334:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 13:19:09.34 [15928:13256:0515/131909.336:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 13:19:09.35 [15928:13256:0515/131909.336:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 13:19:09.35 [15928:13256:0515/131909.339:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 13:19:09.41 [15928:13256:0515/131909.340:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 13:19:09.42 [15928:13256:0515/131909.340:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 13:19:09.42 [15928:13256:0515/131909.343:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 13:19:09.42 [15928:13256:0515/131909.343:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 13:19:09.42 [15928:13256:0515/131909.345:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 13:19:09.42 [15928:13256:0515/131909.347:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 13:19:09.43 [15928:13256:0515/131909.348:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 13:19:09.43 [15928:13256:0515/131909.349:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 13:19:09.43 [15928:13256:0515/131909.352:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 13:19:09.43 [15928:13256:0515/131909.354:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 13:19:09.44 [15928:13256:0515/131909.354:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 13:24:09.17 [15928:13256:0515/132409.177:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 13:34:09.17 [15928:13256:0515/133409.173:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 13:57:24.62 [15928:14016:0515/135724.624:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+5월 15, 2019 14:04:09.13 [15928:13256:0515/140409.139:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 15, 2019 14:09:38.92 [15928:13256:0515/140938.920:ERROR:browser_process_sub_thread.cc(217)] Waited 198 ms for network service
+5월 15, 2019 14:54:53.35 [9308:3076:0515/145453.357:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+5월 15, 2019 14:59:37.50 [9308:15688:0515/145937.504:ERROR:platform_sensor_reader_win.cc(244)] NOT IMPLEMENTED
+5월 15, 2019 14:59:40.24 [9308:15688:0515/145940.245:ERROR:platform_sensor_reader_win.cc(244)] NOT IMPLEMENTED
+5월 15, 2019 15:03:31.76 [9308:3076:0515/150331.766:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+5월 15, 2019 15:09:54.03 [9308:3076:0515/150954.037:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+5월 15, 2019 16:50:38.28 [9308:9544:0515/165038.286:ERROR:browser_process_sub_thread.cc(217)] Waited 257 ms for network service
