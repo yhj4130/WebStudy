@@ -5,7 +5,7 @@
 	// MemberInsert,jsp
 	//-- 데이터베이스의 테이블(TBL_MEMBER)에
 	//   회원 정보 추가 액션처리 수행
-	//   이후, 다시 리스트 페이지를 요청할 수 있도로 안내
+	//   이후, 다시 리스트 페이지를 요청할 수 있도록 안내
 	request.setCharacterEncoding("UTF-8");
 	
 	String uName = request.getParameter("uName");

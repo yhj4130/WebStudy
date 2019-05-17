@@ -170,7 +170,7 @@ public class MemberDAO
 	{
 		int result = 0;
 		
-		String sql = "SELECT COUNT(*) AS COUNT FROM TBL_MEMBER WHERE SID=?";
+		String sql = "SELECT COUNT(*) AS COUNT FROM TBL_MEMBERSCORE WHERE SID=?";
 		
 		PreparedStatement pstmt = conn.prepareStatement(sql);
 		

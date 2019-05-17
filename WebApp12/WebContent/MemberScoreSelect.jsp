@@ -32,12 +32,46 @@
 			str.append("<td>" + score.getRank() + "</td>");
 			
 			// 성적 처리 항목(입력, 수정, 삭제)
+			/* 
 			str.append("<td>");
 			str.append("<button type='button' class='btn01'>입력</button>");
 			str.append("<button type='button' class='btn01'>수정</button>");
 			str.append("<button type='button' class='btn01'>수정</button>");
 			str.append("</td>");
 			str.append("</tr>");
+			 */
+			 
+			 if(score.getKor()==-1 && score.getEng()==-1 && score.getMat()==-1)
+			 {
+				str.append("<td>");
+				
+				str.append("<a href='MemberScoreInsertForm.jsp?sid=" + score.getSid() + "'>");
+				str.append("<button type='button' class='btn01'>입력</button>");
+				str.append("</a>");
+				
+				str.append("<button type='button' class='btn02'>수정</button>");
+				str.append("<button type='button' class='btn02'>삭제</button>");
+				
+				str.append("</td>");
+			 }
+			 else
+			 {
+				str.append("<td>");
+				
+				str.append("<button type='button' class='btn02'>입력</button>");
+				
+				str.append("<a href='MemberScoreUpdateForm.jsp?sid=" + score.getSid() + "'>");
+				str.append("<button type='button' class='btn01'>수정</button>");
+				str.append("</a>");
+				
+				str.append("<a href='javascript: memberScoreDelete(" + score.getSid() + ", \"" + score.getName() +"\")'>");
+				str.append("<button type='button' class='btn01'>삭제</button>");
+				str.append("</a>");
+				
+				str.append("</td>");
+			 }
+			 
+			 str.append("</tr>");
 		}
 		
 		str.append("</table>");
@@ -64,6 +98,27 @@
 <meta charset="UTF-8">
 <title>MemberScoreSelect.jsp</title>
 <link rel="stylesheet" type="text/css" href="css/MemberScore.css">
+
+<script type="text/javascript">
+
+	function memberScoreDelete(sid, name)
+	{
+		// ※ name 문자열을 넘기는 과정에서 따옴표 구성 주의
+		
+		//alert(sid);
+		//alert(name);
+		
+		var res = confirm("번호 : " + sid + ", 이름 : " + name + "\n이 회원의 성적 정보를 삭제하시겠습니까?");
+		
+		//alert(res);
+		//-- confirm 창은 true(확인) 또는 false(취소)를 반환
+		
+		if (res)
+			window.location.href = "MemberScoreDelete.jsp?sid=" + sid;
+	}
+
+</script>
+
 </head>
 <body>
 
