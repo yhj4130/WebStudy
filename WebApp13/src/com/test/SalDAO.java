@@ -43,6 +43,7 @@ public class SalDAO
 		
 		String sql = "SELECT GRADE, LOSAL, HISAL FROM SALGRADE ORDER BY GRADE";
 		PreparedStatement pstmt = conn.prepareStatement(sql);
+		
 		ResultSet rs = pstmt.executeQuery();
 		SalDTO sal = null;
 		while (rs.next())
@@ -120,5 +121,33 @@ public class SalDAO
 	{
 		DBConn.close();
 	}
+	
+	
+	
+	//인원 수 확인(분류별) 담당 메소드
+    public String count(int losal, int hisal) throws SQLException
+    {
+       String result = "";
+       String sql ="SELECT COUNT(*) AS COUNT FROM VIEW_EMP E, SALGRADE S WHERE E.GRADE = S.GRADE AND LOSAL=? AND HISAL=?";
+       PreparedStatement pstmt = conn.prepareStatement(sql);
+       
+       pstmt.setInt(1, losal);
+       pstmt.setInt(2, hisal);
+ 
+       ResultSet rs = pstmt.executeQuery();
+       
+       while (rs.next())
+       {
+          result=rs.getString("COUNT");
+       }
+       rs.close();
+       pstmt.close();
+       
+       return result;
+    }
+	
+	
+	
+	
 	
 }

@@ -429,3 +429,21 @@
 5월 17, 2019 19:22:24.61 [11172:11120:0517/192224.619:ERROR:browser_process_sub_thread.cc(217)] Waited 52 ms for network service
 5월 17, 2019 19:23:09.77 [6028:6064:0517/192309.771:ERROR:browser_process_sub_thread.cc(217)] Waited 137 ms for network service
 5월 17, 2019 20:00:15.03 [7192:8136:0517/200015.033:ERROR:browser_process_sub_thread.cc(217)] Waited 88 ms for network service
+
+5월 20, 2019 09:00:30.47 NEW SESSION
+5월 20, 2019 09:00:30.47 [9892:9236:0520/090030.475:ERROR:browser_process_sub_thread.cc(217)] Waited 325 ms for network service
+5월 20, 2019 09:01:12.84 [4320:1968:0520/090112.849:ERROR:browser_process_sub_thread.cc(217)] Waited 110 ms for network service
+
+5월 20, 2019 11:37:51.49 NEW SESSION
+5월 20, 2019 11:37:51.49 [5632:4312:0520/113751.498:ERROR:browser_process_sub_thread.cc(217)] Waited 85 ms for network service
+5월 20, 2019 11:38:26.85 [6740:6616:0520/113826.851:ERROR:browser_process_sub_thread.cc(217)] Waited 74 ms for network service
+5월 20, 2019 11:38:37.33 [9352:9900:0520/113837.336:ERROR:browser_process_sub_thread.cc(217)] Waited 166 ms for network service
+5월 20, 2019 11:44:09.36 [9884:10288:0520/114409.363:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 20, 2019 11:45:26.35 [9884:10288:0520/114526.359:ERROR:browser_process_sub_thread.cc(217)] Waited 131 ms for network service
+5월 20, 2019 11:48:07.96 [6624:1428:0520/114807.963:ERROR:browser_process_sub_thread.cc(217)] Waited 125 ms for network service
+5월 20, 2019 12:40:37.83 [10904:7020:0520/124037.839:ERROR:browser_process_sub_thread.cc(217)] Waited 171 ms for network service
+5월 20, 2019 13:55:37.57 [1724:6712:0520/135537.576:ERROR:browser_process_sub_thread.cc(217)] Waited 146 ms for network service
+5월 20, 2019 14:35:33.83 [3276:4772:0520/143533.830:ERROR:browser_process_sub_thread.cc(217)] Waited 253 ms for network service
+5월 20, 2019 14:49:09.21 [4904:5152:0520/144909.214:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 20, 2019 14:59:09.13 [4904:5152:0520/145909.130:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 20, 2019 16:03:06.25 [4904:5152:0520/160306.252:ERROR:browser_process_sub_thread.cc(217)] Waited 204 ms for network service

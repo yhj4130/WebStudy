@@ -302,16 +302,13 @@
 </head>
 <body>
 <!-- http://localhost:8090/WebApp13/EmpInsertForm.jsp -->
-<div>
+<div  class="container">
    <h1>회원 입력 페이지</h1>
    <hr>
 </div>
 
-<div>
-   <a href=""><button type="button">회원 목록 페이지로</button></a>
-</div>
 <br>
-<div>
+<div  class="container">
    <!-- 회원 정보 입력 폼 구성 -->
    <form action = "" method="post" id="empForm" >
       <table class="table">
@@ -392,9 +389,9 @@
          </tr>
       </table>
       <br>
-      <a href="javascript:empSubmit()"><button type="button">입력하기</button></a>   
-      <a href="javascript:empReset()"><button type="button">취소하기</button></a>
-      <a href="EmpSelect.jsp"><button type="button">목록으로</button></a>
+      <a href="javascript:empSubmit()"><button type="button" class="btn btn-primary btn-sm active">입력하기</button></a>   
+      <a href="javascript:empReset()"><button type="button" class="btn btn-default btn-sm active">취소하기</button></a>
+      <a href="EmpSelect.jsp"><button type="button" class="btn btn-primary btn-sm active">목록으로</button></a>
    </form>
 <!-- javascript:empSubmit() -->
 </div>

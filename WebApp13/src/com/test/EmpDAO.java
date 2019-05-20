@@ -288,6 +288,9 @@ public class EmpDAO
       return result;
    }
    
+   
+   
+   // 관리자 조회(부서별)
    public ArrayList<EmpDTO> searchMgr2(String dept) throws SQLException
    {
       
@@ -342,6 +345,50 @@ public class EmpDAO
       
       return result;
    } 
+   
+   
+   
+   // 분류별 사원 리스트 출력 (190517 19:00 수정)
+   public ArrayList<EmpDTO> gradeList(int losal, int hisal) throws SQLException
+   {
+	   	  ArrayList<EmpDTO> result = new ArrayList<EmpDTO>();
+	   	
+	      String sql ="SELECT E.EMPNO, E.ENAME, E.DNAME, E.JOB, E.MGR, E.HIREDATE, E.SAL, E.COMM"
+	    		  	+ " FROM VIEW_EMP E, SALGRADE S"
+	    		  	+ " WHERE E.GRADE = S.GRADE AND LOSAL=? AND HISAL=?";
+	      PreparedStatement pstmt = conn.prepareStatement(sql);
+	      
+	      pstmt.setInt(1, losal);
+	      pstmt.setInt(2, hisal);      
+	      
+	      ResultSet rs = pstmt.executeQuery();
+	      
+	      EmpDTO emp = null;
+	      while (rs.next())
+	      {
+	         emp = new EmpDTO();
+	         emp.setEmpno(rs.getInt("EMPNO"));
+	         emp.setEname(rs.getString("ENAME"));
+	         emp.setDname(rs.getString("DNAME"));
+	         emp.setJob(rs.getString("JOB"));
+	         emp.setMgr(rs.getInt("MGR"));
+	         emp.setHiredate(rs.getString("HIREDATE"));
+	         emp.setSal(rs.getInt("SAL"));
+	         emp.setComm(rs.getInt("COMM"));
+	         
+	         result.add(emp);
+	      }
+	      rs.close();
+	      pstmt.close();
+	      
+	      return result;
+	   
+   }
+   
+   
+   
+   
+   
 }
    
    

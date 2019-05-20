@@ -4,10 +4,6 @@
 <%@page import="com.test.EmpDAO"%>
 <%@ page contentType="text/html; charset=UTF-8"%>
 <%
-
-
-
-
    StringBuffer str = new StringBuffer();
   
    EmpDAO dao = new EmpDAO();
@@ -43,8 +39,7 @@
          empCount += dao.count(deptF)+ "명</span>"; 
       }
       
-    
-      
+          
       str.append("<table  class='table table-bordered'>");
       str.append("<tr>");
       str.append("<th style = 'width: 50px;'>번호</th>");
@@ -64,9 +59,6 @@
          if (deptV.equals(deptD.getDeptNo()))
          {
             str.append("<option value='" + deptD.getDeptNo() + "' selected = 'selected''>"+ deptD.getdName() +"</option>");
-            
-         
-         
          }
          else 
          {
@@ -81,6 +73,8 @@
       
       str.append("</tr>");
       
+      
+      // 사원 전체 출력
       if (deptV==null || deptV.equals("0"))
       {
          for (EmpDTO emp : dao.listsAll())
@@ -96,17 +90,17 @@
             str.append("<td>" + emp.getGrade() + "</td>");
             str.append("<td>" + emp.getComm() + "</td>");
             str.append("<td>");
-         str.append("<a href='EmpUpdateForm.jsp?Empno="+emp.getEmpno()+"'>");      
-         str.append("<button type='button' class='btn01'>수정</button>");
-         str.append("</a>");
-            str.append("<a href='javascript:EmpDelete("+ emp.getEmpno()+", \"" +emp.getEname() + "\")'>");
-         str.append("<button type='button' class='btn01'>삭제</button>");
-         str.append("</a>");
-         str.append("</td>" );
+	        str.append("<a href='EmpUpdateForm.jsp?Empno="+emp.getEmpno()+"'>");      
+	        str.append("<button type='button'class='btn btn-primary btn-sm active'>수정</button>");
+	        str.append("</a>");
+	        str.append("<a href='javascript:EmpDelete("+ emp.getEmpno()+", \"" +emp.getEname() + "\")'>");
+	        str.append("<button type='button' class='btn btn-default btn-sm active'>삭제</button>");
+	        str.append("</a>");
+	        str.append("</td>" );
             str.append("</tr>");
          }
       }
-      else
+      else		// 부서별 사원 출력
       {
          for (EmpDTO emp : dao.listsAll2(deptV))
             
@@ -122,24 +116,18 @@
             str.append("<td>" + emp.getGrade() + "</td>");
             str.append("<td>" + emp.getComm() + "</td>");
             str.append("<td>");
-         str.append("<a href='EmpUpdateForm.jsp?Empno="+emp.getEmpno()+"'>");      
-         str.append("<button type='button' class='btn01'>수정</button>");
-         str.append("</a>");
-            str.append("<a href='javascript:EmpDelete("+ emp.getEmpno()+", \"" +emp.getEname() + "\")'>");
-         str.append("<button type='button' class='btn01'>삭제</button>");
-         str.append("</a>");
-         str.append("</td>" );
+	        str.append("<a href='EmpUpdateForm.jsp?Empno="+emp.getEmpno()+"'>");      
+	        str.append("<button type='button'class='btn btn-primary btn-sm active'>수정</button>");
+	        str.append("</a>");
+	        str.append("<a href='javascript:EmpDelete("+ emp.getEmpno()+", \"" +emp.getEname() + "\")'>");
+	        str.append("<button type='button' class='btn btn-default btn-sm active'>삭제</button>");
+	        str.append("</a>");
+	        str.append("</td>" );
             str.append("</tr>");
          }
          
       }
-      
-
-      
       str.append("</table>");
-      
-      
-      
    }
    catch(Exception e)
    {
@@ -157,7 +145,6 @@
       }
       
    }
-   
 
 %>
 <!DOCTYPE html>
@@ -168,20 +155,20 @@
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <script type="text/javascript">
 
-   function deptchange()
-   {
-      EmpForm.submit();
-   }
+	// 
+	function deptchange()
+    {
+       EmpForm.submit();
+    }
    
-   
-   function EmpDelete(empno,ename)
-   {
-      var res = confirm("사원번호 : "+empno + ", 이름 : "+ename+"\n이 사원의 정보를 삭제하시겠습니까?");
+	// 삭제
+    function EmpDelete(empno,ename)
+    {
+       var res = confirm("사원번호 : "+empno + ", 이름 : "+ename+"\n이 사원의 정보를 삭제하시겠습니까?");
       
-      if(res)
-         window.location.href="EmpDelete.jsp?empno="+empno;
-   
-   }
+       if(res)
+          window.location.href="EmpDelete.jsp?empno="+empno;
+    }
 
 </script>
 </head>
@@ -190,13 +177,13 @@
 </div>
 
 <div class="container">
-   <h1>★보라★ 회사 사원 명단 관리 및 출력 페이지</h1>
+   <h1>■■■ 회사 사원 관리 프로그램(1팀) ■■■</h1>
    <hr>
 </div>
 <div  class="container">
-   <a href="EmpInsertForm.jsp"><button type="button">신규 사원 등록</button></a>
-   <a href="DeptSelect.jsp"><button type="button">부서 관리</button></a>
-   <a href="SalSelect.jsp"><button type="button">급여 등급 관리</button></a>
+   <a href="EmpInsertForm.jsp"><button type="button" class="btn btn-primary btn-lg active">신규 사원 등록</button></a>
+   <a href="DeptSelect.jsp"><button type="button" class="btn btn-primary btn-lg active">부서 관리</button></a>
+   <a href="SalSelect.jsp"><button type="button" class="btn btn-primary btn-lg active">급여 등급 관리</button></a>
    <br><br>
 </div>
 
