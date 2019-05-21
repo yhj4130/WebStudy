@@ -106,7 +106,7 @@ public class MyUtil
 		
 		// Prev
 		n = current_page - numPerBlock;	// n : 해당 페이지만큼 앞으로 가기 위한 변수
-		if ( (total_page > numPerBlock) && (current_page > 0) )
+		if ( (total_page > numPerBlock) && (currentPageSetup > 0) )
 			strList.append(" <a href='" + list_url + "pageNum=" + n + ">Prev</a>");
 		//-- currentPageSetup 이 0 보다 큰 경우는
 		//   이미 페이지가 10 이상이라는 의미이며
