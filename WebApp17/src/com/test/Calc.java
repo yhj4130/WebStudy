@@ -19,8 +19,9 @@ public class Calc
 	private String op;	//-- 연산자 (문자열 형태)
 	private int su2;	//-- 피연산자1 (정수 형태)
 	
-	// 사용자 정의 생성자 → 정의하지 않음 → defalut 생성자 자동 삽입
-		
+	// 사용자 정의 생성자 → 정의하지 않음 → default 생성자 자동 삽입
+	
+	// getter / setter 구성
 	public int getSu1()
 	{
 		return su1;
