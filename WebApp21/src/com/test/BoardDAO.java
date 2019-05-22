@@ -74,6 +74,7 @@ public class BoardDAO
 	
 	// DB의 레코드의 갯수를 가져오는 메소드 정의
 	// → 검색 기능을 작업하며 수정하게 될 메소드
+	/*
 	public int getDataCount() throws SQLException
 	{
 		int result = 0;
@@ -93,10 +94,34 @@ public class BoardDAO
 		return result;
 		
 	}// end getDataCount()
-
+	*/
+	public int getDataCount(String searchKey, String searchValue) throws SQLException
+	{
+		int result = 0;
+		
+		searchValue = "%" + searchValue + "%";
+		
+		String sql = "SELECT COUNT(*) AS COUNT FROM TBL_BOARD WHERE " + searchKey + " LIKE ?";
+		
+		PreparedStatement pstmt = conn.prepareStatement(sql);
+		pstmt.setString(1, searchValue);
+		
+		ResultSet rs = pstmt.executeQuery();
+		
+		if(rs.next())
+			result = rs.getInt("COUNT");
+		
+		rs.close();
+		pstmt.close();
+		
+		return result;
+		
+	}// end getDataCount()
+	
 	
 	// 특정 영역의(시작번호 ~ 끝번호) 게시물의 목록을 읽어오는 메소드 정의
 	// → 검색 기능을 작업하며 수정하게 될 메소드
+	/*
 	public List<BoardDTO> getLists(int start, int end) throws SQLException
 	{
 		List<BoardDTO> result = new ArrayList<BoardDTO>();
@@ -132,7 +157,46 @@ public class BoardDAO
 		return result;
 		
 	}// end getLists()
-
+	*/
+	public List<BoardDTO> getLists(int start, int end, String searchKey, String searchValue) throws SQLException
+	{
+		List<BoardDTO> result = new ArrayList<BoardDTO>();
+		
+		searchValue = "%" + searchValue + "%";
+		
+		String sql = "SELECT NUM, NAME, SUBJECT, HITCOUNT, CREATED FROM "
+				+ "(SELECT ROWNUM AS RNUM, DATA.* FROM "
+				+ "(SELECT NUM, NAME, SUBJECT, HITCOUNT, TO_CHAR(CREATED, 'YYYY-MM-DD') AS CREATED "
+				+ "FROM TBL_BOARD WHERE " + searchKey + " LIKE ? ORDER BY NUM DESC) DATA) "
+				+ "WHERE RNUM >= ? AND RNUM <= ?";
+		
+		PreparedStatement pstmt = conn.prepareStatement(sql);
+		pstmt.setString(1, searchValue);
+		pstmt.setInt(2, start);
+		pstmt.setInt(3, end);
+		
+		ResultSet rs = pstmt.executeQuery();
+		
+		while(rs.next())
+		{
+			BoardDTO dto = new BoardDTO();
+			
+			dto.setNum(rs.getInt("NUM"));
+			dto.setName(rs.getString("NAME"));
+			dto.setSubject(rs.getString("SUBJECT"));
+			dto.setHitCount(rs.getInt("HITCOUNT"));
+			dto.setCreated(rs.getString("CREATED"));
+			
+			result.add(dto);
+		}
+		
+		rs.close();
+		pstmt.close();
+		
+		return result;
+		
+	}// end getLists()
+	
 
 	// 특정 게시물 조회에 따른 횟수 증가 메소드 정의
 	public int updateHitCount(int num) throws SQLException
@@ -264,5 +328,5 @@ public class BoardDAO
 		
 		return result;
 		
-	}// end updateData()
+	}// end updateData()	
 }

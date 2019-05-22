@@ -46,8 +46,10 @@ public class MyUtil
 		
 		int numPerBlock = 10;
 		//-- 페이징 처리 시 게시물 리스트 하단의 숫자를 10 개씩 보여주겠다.
+		
 		int currentPageSetup;
 		//-- 현재 페이지 (이 페이지를 기준으로 보여주는 숫자가 달라져야 하기 때문) 
+		
 		int page;
 		int n;
 		//-- 이전 체이지 블럭과 같은 처리에서 이동하기 위한 변수
@@ -107,7 +109,7 @@ public class MyUtil
 		// Prev
 		n = current_page - numPerBlock;	// n : 해당 페이지만큼 앞으로 가기 위한 변수
 		if ( (total_page > numPerBlock) && (currentPageSetup > 0) )
-			strList.append(" <a href='" + list_url + "pageNum=" + n + ">Prev</a>");
+			strList.append(" <a href='" + list_url + "pageNum=" + n + "'>Prev</a>");
 		//-- currentPageSetup 이 0 보다 큰 경우는
 		//   이미 페이지가 10 이상이라는 의미이며
 		//   이 때, 현재 페이지(current_page) 가 11 페이지 이상일 경우
@@ -136,7 +138,7 @@ public class MyUtil
 		// Next
 		n = current_page + numPerBlock;
 		if ( (total_page - currentPageSetup) > numPerBlock )
-			strList.append(" <a href='" + list_url + "pageNum" + n + "'>Next</a>");
+			strList.append(" <a href='" + list_url + "pageNum=" + n + "'>Next</a>");
 		
 		// 마지막 페이지
 		if ( (total_page > numPerBlock) && ((current_page + numPerBlock) < total_page) )
