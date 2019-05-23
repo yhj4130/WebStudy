@@ -11,11 +11,12 @@
 	// Delete.jsp
 	
 	int num = Integer.parseInt(request.getParameter("num"));
+	int pageNum = Integer.parseInt(request.getParameter("pageNum"));
 	
 	Connection conn = DBConn.getConnection();
 	BoardDAO dao = new BoardDAO(conn);
 	
 	dao.deleteData(num);
 	
-	response.sendRedirect("List.jsp");
+	response.sendRedirect("List.jsp?pageNum="+pageNum);
 %>

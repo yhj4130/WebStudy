@@ -176,7 +176,7 @@
 			 <dl>
 				<dd class="num"><%=dto.getNum() %></dd>
 				<dd class="subject">
-					<a href="<%=articleUrl%>&num=<%=dto.getNum()  %>"><%=dto.getSubject() %></a>
+					<a href="<%=articleUrl%>&num=<%=dto.getNum() %>"><%=dto.getSubject() %></a>
 				</dd>
 				<dd class="name"><%=dto.getName() %></dd>
 				<dd class="created"><%=dto.getCreated() %></dd>

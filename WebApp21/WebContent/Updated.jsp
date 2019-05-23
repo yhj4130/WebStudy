@@ -1,3 +1,4 @@
+<%@page import="java.net.URLEncoder"%>
 <%@page import="java.net.URLDecoder"%>
 <%@page import="com.test.BoardDTO"%>
 <%@page import="com.test.BoardDAO"%>
@@ -14,6 +15,17 @@
 	int num = Integer.parseInt(request.getParameter("num"));
 	int pageNum = Integer.parseInt(request.getParameter("pageNum"));
 	
+	String searchKey = request.getParameter("searchKey");
+	String searchValue = request.getParameter("searchValue");
+	
+	if(searchKey != null)
+		searchValue = URLEncoder.encode(searchValue, "UTF-8");
+	else
+	{
+		searchKey = "subject";
+		searchValue = "";
+	}
+	
 	Connection conn = DBConn.getConnection();
 	BoardDAO dao = new BoardDAO(conn);
 	
@@ -23,6 +35,8 @@
 	
 	if(dto==null)
 		response.sendRedirect("List.jsp");
+	
+	String pwd = dto.getPwd();
 %>
 
 <!DOCTYPE html>
@@ -97,8 +111,14 @@
 		}
 		// ---------------------------- 패스워드 입력 확인
 		
+		if(f.pwd.value!="<%=pwd%>")
+		{
+			alert("\n패스워드가 틀렸습니다. 다시 입력해주세요.");
+			f.pwd.focus();
+			return;
+		}
 		
-		f.action = "<%=cp %>/Updated_ok.jsp?pageNum=" + <%=pageNum%>;
+		f.action = "<%=cp %>/Updated_ok.jsp?pageNum=" + <%=pageNum%> + "&searchKey=<%=searchKey%>" + "&searchValue=<%=searchValue%>";
 		
 		f.submit();
 	}
@@ -167,6 +187,8 @@
 			<div id="bbsCreated_footer">
 			<!-- Update_ok.jsp 페이지 요청 과정에서 반드시 필요한 데이터 -->
 				<input type="hidden" name="num" value="<%=dto.getNum()%>">
+				<input type="hidden" name="searchKey" value="<%=searchKey%>">
+				<input type="hidden" name="searchValue" value="<%=searchValue%>">
 				<input type="button" value="수정하기" class="btn2" onclick="sendIt()">
 				<input type="reset" value="다시입력" class="btn2" onclick="document.myForm.subject.focus();">
 				<input type="button" value="작성취소" class="btn2" onclick="javascript:location.href='<%=cp%>/List.jsp'">

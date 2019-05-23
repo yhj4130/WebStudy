@@ -329,4 +329,98 @@ public class BoardDAO
 		return result;
 		
 	}// end updateData()	
+	
+	
+	// 이전 게시물 번호 얻어내기
+	public int getBeforeNum(int num)
+	{
+		int result = 0;
+		String sql = "";
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		
+		try
+		{
+			sql = "SELECT NVL(MAX(NUM), -1) AS BEFORENUM FROM TBL_BOARD WHERE NUM<?";
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, num);
+			
+			rs = pstmt.executeQuery();
+			
+			if(rs.next())
+				result = rs.getInt(1);
+			
+			rs.close();
+			
+			pstmt.close();
+			
+		} catch (Exception e)
+		{
+			System.out.println(e.toString());
+		}
+		
+		return result;
+		
+	}// end getBeforeNum()
+	
+	
+	// 다음 게시물 번호 얻어내기
+	public int getNextNum(int num)
+	{
+		int result = 0;
+		String sql = "";
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		
+		try
+		{
+			sql = "SELECT NVL(MIN(NUM), -1) AS NEXTNUM FROM TBL_BOARD WHERE NUM>?";
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, num);
+			
+			rs = pstmt.executeQuery();
+			
+			if(rs.next())
+				result = rs.getInt(1);
+			
+			rs.close();
+			
+			pstmt.close();
+			
+		} catch (Exception e)
+		{
+			System.out.println(e.toString());
+		}
+		
+		return result;
+		
+		
+	}// end getNextNum()
+	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

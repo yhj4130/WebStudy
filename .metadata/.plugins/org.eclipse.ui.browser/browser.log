@@ -463,3 +463,25 @@
 5월 22, 2019 16:43:44.73 [11212:10360:0522/164344.732:ERROR:browser_process_sub_thread.cc(217)] Waited 48 ms for network service
 5월 22, 2019 17:12:44.43 [5136:1136:0522/171244.438:ERROR:browser_process_sub_thread.cc(217)] Waited 66 ms for network service
 5월 22, 2019 17:49:49.21 [424:9212:0522/174949.213:ERROR:browser_process_sub_thread.cc(217)] Waited 28 ms for network service
+
+5월 23, 2019 10:14:09.33 NEW SESSION
+5월 23, 2019 10:14:09.33 [7444:5748:0523/101409.328:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 23, 2019 10:44:09.12 [7444:5748:0523/104409.129:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 23, 2019 10:44:09.37 [7444:5748:0523/104409.370:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 23, 2019 10:44:09.37 [7444:5748:0523/104409.370:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 23, 2019 10:44:09.37 [7444:5748:0523/104409.370:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 23, 2019 10:44:09.38 [7444:5748:0523/104409.372:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 23, 2019 10:44:09.38 [7444:5748:0523/104409.373:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 23, 2019 10:44:09.38 [7444:5748:0523/104409.375:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 23, 2019 10:44:09.39 [7444:5748:0523/104409.375:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 23, 2019 10:44:09.39 [7444:5748:0523/104409.378:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 23, 2019 10:44:09.39 [7444:5748:0523/104409.380:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 23, 2019 10:44:09.39 [7444:5748:0523/104409.382:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 23, 2019 10:44:09.40 [7444:5748:0523/104409.383:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 23, 2019 10:54:09.12 [7444:5748:0523/105409.125:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 23, 2019 10:59:09.16 [7444:5748:0523/105909.167:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 23, 2019 11:09:09.21 [7444:5748:0523/110909.217:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 23, 2019 11:13:51.08 [7444:5748:0523/111351.084:ERROR:browser_process_sub_thread.cc(217)] Waited 209 ms for network service
+5월 23, 2019 11:36:09.34 [12876:12880:0523/113609.345:ERROR:textfield.cc(1773)] NOT IMPLEMENTED
+5월 23, 2019 13:14:09.30 [12876:12996:0523/131409.307:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 23, 2019 14:11:07.71 [12876:12996:0523/141107.710:ERROR:browser_process_sub_thread.cc(217)] Waited 198 ms for network service
