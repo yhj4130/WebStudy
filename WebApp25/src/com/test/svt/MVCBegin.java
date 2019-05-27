@@ -41,7 +41,7 @@ public class MVCBegin extends HttpServlet
 		
 		// check !!
 		// 제어권(제어 흐름)도 JSP 페이지(View)에 전달해야 한다.
-		RequestDispatcher dispatcher = request.getRequestDispatcher("MVCBegin.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/view/MVCBegin.jsp");
 		dispatcher.forward(request, response);
 		//-- 『javax.servlet.RequestDispatcher』 클래스는
 		//   현재 클라이언트의 요청을 다른 서블릿/JSP 페이지로 전달하거나

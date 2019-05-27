@@ -661,3 +661,31 @@
 5월 24, 2019 13:59:09.29 [11480:9372:0524/135909.291:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
 5월 24, 2019 14:07:04.11 [11480:9372:0524/140704.110:ERROR:browser_process_sub_thread.cc(217)] Waited 203 ms for network service
 5월 24, 2019 14:37:22.09 [6572:2064:0524/143722.093:ERROR:browser_process_sub_thread.cc(217)] Waited 26 ms for network service
+
+5월 27, 2019 09:03:58.14 NEW SESSION
+5월 27, 2019 09:03:58.14 [13044:6192:0527/090358.147:ERROR:cache_util_win.cc(21)] Unable to move the cache: 0
+5월 27, 2019 09:03:58.61 [13044:6192:0527/090358.147:ERROR:cache_util.cc(141)] Unable to move cache folder C:\Users\sist\AppData\Local\Google\Chrome\User Data\ShaderCache\GPUCache to C:\Users\sist\AppData\Local\Google\Chrome\User Data\ShaderCache\old_GPUCache_000
+5월 27, 2019 09:03:58.61 [13044:6192:0527/090358.147:ERROR:disk_cache.cc(185)] Unable to create cache
+5월 27, 2019 09:03:58.62 [13044:6192:0527/090358.147:ERROR:shader_disk_cache.cc(623)] Shader Cache Creation failed: -2
+5월 27, 2019 09:03:58.62 [13044:6192:0527/090358.612:ERROR:cache_util_win.cc(21)] Unable to move the cache: 0
+5월 27, 2019 09:03:58.62 [13044:6192:0527/090358.612:ERROR:cache_util.cc(141)] Unable to move cache folder C:\Users\sist\AppData\Local\Google\Chrome\User Data\ShaderCache\GPUCache to C:\Users\sist\AppData\Local\Google\Chrome\User Data\ShaderCache\old_GPUCache_000
+5월 27, 2019 09:03:58.62 [13044:6192:0527/090358.612:ERROR:disk_cache.cc(185)] Unable to create cache
+5월 27, 2019 09:03:58.62 [13044:6192:0527/090358.612:ERROR:shader_disk_cache.cc(623)] Shader Cache Creation failed: -2
+5월 27, 2019 09:03:58.81 [8464:6776:0527/090358.817:ERROR:browser_process_sub_thread.cc(217)] Waited 597 ms for network service
+5월 27, 2019 09:04:09.48 [13044:6192:0527/090409.483:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 27, 2019 09:08:22.24 [13044:6192:0527/090822.249:ERROR:browser_process_sub_thread.cc(217)] Waited 123 ms for network service
+5월 27, 2019 09:09:09.44 [4576:8576:0527/090909.445:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 27, 2019 09:24:09.42 [4576:8576:0527/092409.403:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 27, 2019 09:39:09.14 [4576:8576:0527/093909.146:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 27, 2019 09:59:09.31 [4576:8576:0527/095909.315:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 27, 2019 10:44:16.89 [4576:8576:0527/104416.899:ERROR:browser_process_sub_thread.cc(217)] Waited 195 ms for network service
+5월 27, 2019 10:49:09.35 [3732:6252:0527/104909.357:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 27, 2019 11:30:00.85 [3732:6252:0527/113000.853:ERROR:browser_process_sub_thread.cc(217)] Waited 65 ms for network service
+5월 27, 2019 11:30:08.25 [7480:8408:0527/113008.252:ERROR:browser_process_sub_thread.cc(217)] Waited 252 ms for network service
+5월 27, 2019 12:29:09.14 [1096:11292:0527/122909.146:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 27, 2019 13:14:09.14 [1096:11292:0527/131409.144:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 27, 2019 13:39:09.40 [1096:11292:0527/133909.402:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 27, 2019 13:44:09.17 [1096:11292:0527/134409.172:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 27, 2019 15:24:09.30 [1096:11292:0527/152409.308:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 27, 2019 15:29:09.30 [1096:11292:0527/152909.303:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 27, 2019 16:24:09.11 [1096:11292:0527/162409.117:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
