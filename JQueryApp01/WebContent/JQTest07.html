@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JQTest07.html</title>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function()
+	{
+		/* 
+		$("input[id=all-check]").click(function()
+		{
+			if($(this).prop("checked", true))
+			{
+				//alert("test");
+				$("input[type=checkbox]").prop("checked", true);
+			}
+			else
+			{
+				alert("test");
+				$("input[type=checkbox]").prop("checked", false);
+			}
+			
+		});
+		 */
+		
+		/* 
+		$("#all-check").change(function()
+		{
+			// 테스트
+			alert("change");
+		}); 
+		*/
+		
+		
+		$("#all-check").click(function()
+		{
+			// 테스트
+			//alert("click");
+			
+			// 테스트
+			//alert($(this).attr("checked"));	//-- undefined / undefined
+			//alert($(this).prop("checked"));	//-- 속성 → true / false
+			//alert(this.checked);				//-- 속성 → true / false
+			//alert($(this).is(":checked"));	//-- 속성 → true / false
+			
+			// 방법 1.
+			//$("div > input:checkbox").prop("checked", this.checked);
+			
+			// 방법 2.
+			// 『$(선택자).children()』
+			$("div").children().prop("checked", this.checked);
+		});  
+	});
+
+</script>
+</head>
+<body>
+
+<label><input type="checkbox" id="all-check">모두 선택</label><br><br>
+
+<div>
+	<input type="checkbox" id="check1"><label for="check1">바나나</label>
+	<input type="checkbox" id="check2"><label for="check2">딸기</label>
+	<input type="checkbox" id="check3"><label for="check3">망고</label>
+	<input type="checkbox" id="check4"><label for="check4">자몽</label>
+	<input type="checkbox" id="check5"><label for="check5">수박</label>
+</div>
+
+</body>
+</html>

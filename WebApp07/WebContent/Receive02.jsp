@@ -60,7 +60,7 @@
 	성적 처리가 완료되었습니다.<br>
 	회원님의 점수는 국어:<span><%=kor %></span>점,
 	영어:<span><%=eng %></span>점, 
-	수학:<span"><%=mat %></span>점 입니다.<br>
+	수학:<span><%=mat %></span>점 입니다.<br>
 	총점은 <span><%=tot %></span>점, 평균은 <span><%=String.format("%.1f", avg) %></span>점 입니다.
 </div>
 

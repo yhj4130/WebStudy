@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JQTest10.html</title>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<script type="text/javascript">
+
+	function submit()
+	{
+		//alert("test");
+		var title = document.getElementById("title").value;
+		var day = document.getElementById("day").value;
+		var time1 = document.getElementById("time1").value;
+		var time2 = document.getElementById("time2").value;
+		var color = document.getElementById("color").value;
+		
+		var start = day+time1;
+		var end = day+time2;
+		
+		alert(document.getElementById(start));
+		/* for(int i=0; i<(time2-time1); i++)
+		{
+			document.getElementById(start).value += title;
+		} */
+		
+	}
+
+</script>
+</head>
+<body>
+
+<!-- 
+	자바스크립트로	
+	
+	--------------------------------------------------
+	
+	 일정
+	 
+	 -----------------------------------------
+	         월     화     수     목
+	 -----------------------------------------
+	 11:00
+	 -----------------------------------------
+	 12:00
+	 -----------------------------------------
+	 13:00
+	 -----------------------------------------
+	 14:00
+	 -----------------------------------------
+	 15:00
+	 -----------------------------------------
+	 16:00
+	 -----------------------------------------
+	 17:00
+	 -----------------------------------------
+	 18:00
+	 -----------------------------------------
+	
+	제목 [         ]
+	날짜 [월요일 ▼]
+	시간 [11:00 ▼] ~ [13:00 ▼]
+	색상 [빨강 ▼]
+	
+	<일정 추가하기>
+	--------------------------------------------------
+-->
+
+<div>
+	<h2>일정</h2>
+	<hr>
+</div>
+
+<div>
+	<form>
+		<table class="table" style="width: 1000px;">
+			<tr>
+				<th style="width: 15%;">시간 / 요일</th>
+				<th>월</th>
+				<th>화</th>
+				<th>수</th>
+				<th>목</th>
+			</tr>
+			<tr>
+				<th style="width: 15%;">11:00</th>
+				<td id="mon11"></td>
+				<td id="tue11"></td>
+				<td id="wed11"></td>
+				<td id="thu11"></td>
+			</tr>
+			<tr>
+				<th style="width: 15%;">12:00</th>
+				<td id="mon12"></td>
+				<td id="tue12"></td>
+				<td id="wed12"></td>
+				<td id="thu12"></td>
+			</tr>
+			<tr>
+				<th style="width: 15%;">13:00</th>
+				<td id="mon13"></td>
+				<td id="tue13"></td>
+				<td id="wed13"></td>
+				<td id="thu13"></td>
+			</tr>   
+			<tr>
+				<th style="width: 15%;">14:00</th>
+				<td id="mon14"></td>
+				<td id="tue14"></td>
+				<td id="wed14"></td>
+				<td id="thu14"></td>
+			</tr>
+			<tr>
+				<th style="width: 15%;">15:00</th>
+				<td id="mon15"></td>
+				<td id="tue15"></td>
+				<td id="wed15"></td>
+				<td id="thu15"></td>
+			</tr>
+			<tr>
+				<th style="width: 15%;">16:00</th>
+				<td id="mon16"></td>
+				<td id="tue16"></td>
+				<td id="wed16"></td>
+				<td id="thu16"></td>
+			</tr>
+			<tr>
+				<th style="width: 15%;">17:00</th>
+				<td id="mon17"></td>
+				<td id="tue17"></td>
+				<td id="wed17"></td>
+				<td id="thu17"></td>
+			</tr>   
+			<tr>
+				<th style="width: 15%;">18:00</th>
+				<td id="mon18"></td>
+				<td id="tue18"></td>
+				<td id="wed18"></td>
+				<td id="thu18"></td>
+			</tr>
+			
+		</table>
+		<br><br>
+	</form>
+</div>
+
+<div>
+	<form>
+		제목 <input type="text" id="title"><br><br>
+		날짜 
+		<select name="day" id="day">
+			<option value="mon">월요일</option>
+			<option value="tue">화요일</option>
+			<option value="wed">수요일</option>
+			<option value="thu">목요일</option>
+		</select>
+		<br><br>
+		시간
+		<select name="time1" id="time1">
+			<option value="11">11시</option>
+			<option value="12">12시</option>
+			<option value="13">13시</option>
+			<option value="14">14시</option>
+			<option value="15">15시</option>
+			<option value="16">16시</option>
+			<option value="17">17시</option>
+			<option value="18">18시</option>
+		</select>
+		 ~ 
+		<select name="time2" id="time2">
+			<option value="11">11시</option>
+			<option value="12">12시</option>
+			<option value="13">13시</option>
+			<option value="14">14시</option>
+			<option value="15">15시</option>
+			<option value="16">16시</option>
+			<option value="17">17시</option>
+			<option value="18">18시</option>
+		</select>
+		<br><br>
+		색상
+		<select name="color" id="color">
+			<option value="red" style="background: red;">빨강</option>
+			<option value="orange" style="background: orange;">주황</option>
+			<option value="yellow" style="background: yellow;">노랑</option>
+			<option value="green" style="background: green;">초록</option>
+			<option value="blue" style="background: blue;">파랑</option>
+		</select>
+		<br><br>
+		<a href="javascript: submit()"><button type="button">일정 추가하기</button></a>
+	</form>
+</div>
+
+
+</body>
+</html>

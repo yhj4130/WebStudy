@@ -689,3 +689,25 @@
 5월 27, 2019 15:24:09.30 [1096:11292:0527/152409.308:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
 5월 27, 2019 15:29:09.30 [1096:11292:0527/152909.303:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
 5월 27, 2019 16:24:09.11 [1096:11292:0527/162409.117:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+
+5월 28, 2019 10:17:53.09 NEW SESSION
+5월 28, 2019 10:17:53.09 [2660:4460:0528/101753.084:ERROR:browser_process_sub_thread.cc(217)] Waited 223 ms for network service
+5월 28, 2019 10:42:00.30 [5500:9648:0528/104200.306:ERROR:browser_process_sub_thread.cc(217)] Waited 164 ms for network service
+5월 28, 2019 10:49:09.12 [4300:8044:0528/104909.126:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 28, 2019 10:49:09.73 [4300:8044:0528/104909.738:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 28, 2019 11:12:02.31 [4300:8044:0528/111202.315:ERROR:browser_process_sub_thread.cc(217)] Waited 163 ms for network service
+5월 28, 2019 11:22:25.11 [3992:10016:0528/112225.116:ERROR:browser_process_sub_thread.cc(217)] Waited 231 ms for network service
+5월 28, 2019 11:38:52.21 [8380:7020:0528/113852.215:ERROR:browser_process_sub_thread.cc(217)] Waited 108 ms for network service
+5월 28, 2019 11:41:22.76 [6808:4588:0528/114122.768:ERROR:browser_process_sub_thread.cc(217)] Waited 105 ms for network service
+5월 28, 2019 11:46:17.89 [1252:3060:0528/114617.899:ERROR:browser_process_sub_thread.cc(217)] Waited 78 ms for network service
+5월 28, 2019 11:59:09.17 [6104:5724:0528/115909.172:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 28, 2019 12:03:52.08 [6104:5724:0528/120352.066:ERROR:browser_process_sub_thread.cc(217)] Waited 84 ms for network service
+5월 28, 2019 12:28:59.81 [4032:3096:0528/122859.812:ERROR:browser_process_sub_thread.cc(217)] Waited 124 ms for network service
+5월 28, 2019 13:29:09.15 [580:7768:0528/132909.152:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 28, 2019 13:29:09.60 [580:7768:0528/132909.602:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 28, 2019 13:39:43.85 [580:7768:0528/133943.850:ERROR:browser_process_sub_thread.cc(217)] Waited 124 ms for network service
+5월 28, 2019 16:02:49.49 [11084:10996:0528/160249.499:ERROR:browser_process_sub_thread.cc(217)] Waited 175 ms for network service
+5월 28, 2019 16:05:58.86 [6732:9780:0528/160558.863:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+5월 28, 2019 16:08:44.37 [6732:10184:0528/160844.376:ERROR:textfield.cc(1773)] NOT IMPLEMENTED
+5월 28, 2019 16:10:09.25 [6732:11496:0528/161009.257:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+5월 28, 2019 16:39:54.62 [6732:11496:0528/163954.606:ERROR:browser_process_sub_thread.cc(217)] Waited 77 ms for network service
