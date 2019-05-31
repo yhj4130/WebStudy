@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JQTest10_backup.html</title>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<style type="text/css">
+	body, div, span, table, th, td
+	{
+		font-size: 12px;
+	}
+	#list
+	{
+		border: 1px solid gray;
+		border-collapse: collapse;
+		width: 800px;
+	}
+	#list th
+	{
+		width: 152px;
+	}
+	#list td
+	{
+		width: 162px;
+	}
+	#list th, #list td
+	{
+		border: 1px solid gray;
+		padding: 3px;
+	}
+</style>
+<script type="text/javascript">
+
+	function submit()
+	{
+		var title = document.getElementById("title").value;
+		var day =  parseInt(document.getElementById("day").value);
+		var start = parseInt(document.getElementById("start").value);
+		var end = parseInt(document.getElementById("end").value);
+		var color = document.getElementById("color").value;
+		
+		var tds = document.getElementsByTagName("td");					// ※ 모든 td 태그들   
+        
+		//alert(tds.length);	//-- 32 (→ th 제외)                                        
+		                                                                                 
+		// 요일(td)이 4가지 이기 때문에 * 4                                                        
+		for (var i=(day + (start-1) * 4);  i<=(day + (end-1) * 4);  i+= 4)             
+		{                                                                                
+			tds[i].style.backgroundColor = color;                                        
+			tds[i].innerText = title;
+		}
+		
+		document.getElementById("title").value = "";
+		document.getElementById("title").focus();
+	}
+
+</script>
+</head>
+<body>
+
+<!-- 
+	자바스크립트로	
+	
+	--------------------------------------------------
+	
+	 일정
+	 
+	 -----------------------------------------
+	         월     화     수     목
+	 -----------------------------------------
+	 11:00
+	 -----------------------------------------
+	 12:00
+	 -----------------------------------------
+	 13:00
+	 -----------------------------------------
+	 14:00
+	 -----------------------------------------
+	 15:00
+	 -----------------------------------------
+	 16:00
+	 -----------------------------------------
+	 17:00
+	 -----------------------------------------
+	 18:00
+	 -----------------------------------------
+	
+	제목 [         ]
+	날짜 [월요일 ▼]
+	시간 [11:00 ▼] ~ [13:00 ▼]
+	색상 [빨강 ▼]
+	
+	<일정 추가하기>
+	--------------------------------------------------
+-->
+
+<div>
+	<h2>일정</h2>
+	<hr>
+</div>
+
+<div>
+	<table id="list">
+		<tr>
+			<th style="width: 15%;">시간 / 요일</th>
+			<th>월</th>
+			<th>화</th>
+			<th>수</th>
+			<th>목</th>
+		</tr>
+		<tr>
+			<th style="width: 15%;">11:00</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th style="width: 15%;">12:00</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th style="width: 15%;">13:00</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>   
+		<tr>
+			<th style="width: 15%;">14:00</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th style="width: 15%;">15:00</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th style="width: 15%;">16:00</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th style="width: 15%;">17:00</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>   
+		<tr>
+			<th style="width: 15%;">18:00</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		
+	</table>
+	<br><br>
+</div>
+
+<div>
+		제목 <input type="text" id="title"><br><br>
+		날짜 
+		<select name="day" id="day">
+			<option value="0">월요일</option>
+			<option value="1">화요일</option>
+			<option value="2">수요일</option>
+			<option value="3">목요일</option>
+		</select>
+		<br><br>
+		시간
+		<select id="start">
+			<option value="1">11시</option>
+			<option value="2">12시</option>
+			<option value="3">13시</option>
+			<option value="4">14시</option>
+			<option value="5">15시</option>
+			<option value="6">16시</option>
+			<option value="7">17시</option>
+			<option value="8">18시</option>
+		</select>
+		 ~ 
+		<select id="end">
+			<option value="1">11시</option>
+			<option value="2">12시</option>
+			<option value="3">13시</option>
+			<option value="4">14시</option>
+			<option value="5">15시</option>
+			<option value="6">16시</option>
+			<option value="7">17시</option>
+			<option value="8">18시</option>
+		</select>
+		<br><br>
+		색상
+		<select id="color">
+			<option value="#ff3300">빨강</option>
+			<option value="#ffff33">노랑</option>
+			<option value="#7799ff">파랑</option>
+			<option value="#808080">검정</option>
+		</select>
+		<br><br>
+		<button type="button" onclick="submit()">일정 추가하기</button>
+</div>
+
+
+</body>
+</html>

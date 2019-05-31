@@ -711,3 +711,28 @@
 5월 28, 2019 16:08:44.37 [6732:10184:0528/160844.376:ERROR:textfield.cc(1773)] NOT IMPLEMENTED
 5월 28, 2019 16:10:09.25 [6732:11496:0528/161009.257:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
 5월 28, 2019 16:39:54.62 [6732:11496:0528/163954.606:ERROR:browser_process_sub_thread.cc(217)] Waited 77 ms for network service
+
+5월 29, 2019 09:54:18.63 NEW SESSION
+5월 29, 2019 09:54:18.63 [9748:15816:0529/095418.617:ERROR:browser_process_sub_thread.cc(217)] Waited 24 ms for network service
+5월 29, 2019 10:21:19.76 [7252:2936:0529/102119.760:ERROR:browser_process_sub_thread.cc(217)] Waited 107 ms for network service
+5월 29, 2019 10:52:15.86 [7056:14980:0529/105215.866:ERROR:browser_process_sub_thread.cc(217)] Waited 125 ms for network service
+
+5월 30, 2019 10:06:14.22 NEW SESSION
+5월 30, 2019 10:06:14.22 [5460:744:0530/100614.224:ERROR:browser_process_sub_thread.cc(217)] Waited 62 ms for network service
+5월 30, 2019 10:06:21.14 [14236:8668:0530/100621.145:ERROR:browser_process_sub_thread.cc(217)] Waited 78 ms for network service
+5월 30, 2019 10:20:02.94 [6696:4364:0530/102002.944:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+5월 30, 2019 11:37:53.28 [6696:13804:0530/113753.289:ERROR:browser_process_sub_thread.cc(217)] Waited 136 ms for network service
+5월 30, 2019 14:01:58.02 [2744:11380:0530/140158.013:ERROR:browser_process_sub_thread.cc(217)] Waited 120 ms for network service
+
+5월 31, 2019 09:41:48.78 NEW SESSION
+5월 31, 2019 09:41:48.78 [17556:1656:0531/094148.672:ERROR:browser_process_sub_thread.cc(217)] Waited 174 ms for network service
+5월 31, 2019 10:54:39.57 [1584:1516:0531/105439.579:ERROR:browser_process_sub_thread.cc(217)] Waited 238 ms for network service
+5월 31, 2019 10:54:49.75 [13780:9176:0531/105449.753:ERROR:browser_process_sub_thread.cc(217)] Waited 143 ms for network service
+5월 31, 2019 10:55:04.73 [12132:1700:0531/105504.731:ERROR:browser_process_sub_thread.cc(217)] Waited 147 ms for network service
+5월 31, 2019 10:55:19.59 [13056:4772:0531/105519.596:ERROR:browser_process_sub_thread.cc(217)] Waited 164 ms for network service
+5월 31, 2019 11:12:00.27 [5748:9684:0531/111200.276:ERROR:browser_process_sub_thread.cc(217)] Waited 122 ms for network service
+5월 31, 2019 11:12:57.63 [10352:8316:0531/111257.638:ERROR:browser_process_sub_thread.cc(217)] Waited 93 ms for network service
+5월 31, 2019 11:13:13.04 [8008:2720:0531/111313.041:ERROR:browser_process_sub_thread.cc(217)] Waited 165 ms for network service
+5월 31, 2019 11:14:34.80 [1416:16004:0531/111434.807:ERROR:browser_process_sub_thread.cc(217)] Waited 104 ms for network service
+5월 31, 2019 11:33:48.32 [884:14116:0531/113348.324:ERROR:browser_process_sub_thread.cc(217)] Waited 156 ms for network service
+5월 31, 2019 11:50:45.58 [10448:4376:0531/115045.581:ERROR:browser_process_sub_thread.cc(217)] Waited 5 ms for network service
